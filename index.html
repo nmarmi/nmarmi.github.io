@@ -3,11 +3,499 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <meta
+    name="description"
+    content="Nicolo Marmi's editorial-style portfolio site with selected projects, technical skills, and a recruiter-friendly overview."
+  />
+  <title>Nicolo Marmi | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>Student | Developer | Quant</p>
-  <p>This is my personal website.</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">NM</span>
+        <span class="brand-text">Nicolo Marmi</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#how-i-work">How I Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="container hero-grid reveal">
+      <div class="hero-copy">
+        <h1>Nicolo Marmi</h1>
+        <p class="hero-role">
+          Software engineer and quantitative-minded CS student focused on clean,
+          practical problem-solving.
+        </p>
+
+        <div class="cta-row">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="#contact">Contact</a>
+          <a
+            class="button button-ghost"
+            href="assets/nicolo-marmi-resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-signal-grid" aria-label="Core strengths">
+        <article class="hero-signal-card">
+          <p class="hero-signal-title">Solve ambiguous problems</p>
+          <p>Break messy technical questions into concrete, workable next steps.</p>
+        </article>
+        <article class="hero-signal-card">
+          <p class="hero-signal-title">Build efficient systems</p>
+          <p>Favor practical architectures, clean interfaces, and durable execution.</p>
+        </article>
+        <article class="hero-signal-card">
+          <p class="hero-signal-title">Learn fast</p>
+          <p>Ramp quickly across unfamiliar tools, domains, and codebases.</p>
+        </article>
+        <article class="hero-signal-card">
+          <p class="hero-signal-title">Reason analytically</p>
+          <p>Use evidence, debugging, and structured thinking to make decisions.</p>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">About</p>
+          <h2>A concise story, not a wall of resume text.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">
+              Placeholder biography copy goes here. The goal is to explain what
+              I am building toward, what kinds of problems keep my attention,
+              and how technical curiosity shows up in real work.
+            </p>
+            <p>
+              The final version can balance professional narrative with a few
+              personal cues: taste, work habits, and the through-line that
+              connects software engineering, research, and analytical thinking.
+            </p>
+
+            <div class="value-grid" aria-label="Working values">
+              <article class="value-card">
+                <p class="value-label">Clarity</p>
+                <p>Prefer systems and explanations that hold up under scrutiny.</p>
+              </article>
+              <article class="value-card">
+                <p class="value-label">Range</p>
+                <p>Comfortable moving between implementation, product, and analysis.</p>
+              </article>
+              <article class="value-card">
+                <p class="value-label">Craft</p>
+                <p>Strong interfaces, clean writing, and deliberate engineering choices.</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="about-visual reveal" aria-label="Secondary visual placeholder">
+            <img
+              src="assets/studio-block.svg"
+              alt="Abstract placeholder visual block"
+            />
+            <p>
+              Optional second photo or studio image can replace this visual
+              block later.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Selected Projects</p>
+          <h2>Some of my favorite projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <p class="project-index">01</p>
+            <h3>Systems Project Placeholder</h3>
+            <p class="project-problem">
+              Problem: a concise summary of the system, platform, or workflow
+              challenge this project was built to solve.
+            </p>
+            <p class="project-stack">Stack: JavaScript, APIs, infrastructure, data flow</p>
+            <p class="project-outcome">
+              Outcome: a single line about performance, reliability, adoption,
+              or what changed because the work shipped.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/nmarmi/" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#contact">Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-index">02</p>
+            <h3>Research Workflow Placeholder</h3>
+            <p class="project-problem">
+              Problem: a research-heavy or analytical project with a strong
+              methodology, data story, or evaluation loop.
+            </p>
+            <p class="project-stack">Stack: Python, notebooks, visualization, experimentation</p>
+            <p class="project-outcome">
+              Outcome: what insight, decision, or measurable improvement came
+              out of the work.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/nmarmi/" target="_blank" rel="noreferrer">Repository</a>
+              <a href="#how-i-work">Process</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-index">03</p>
+            <h3>Product Build Placeholder</h3>
+            <p class="project-problem">
+              Problem: a user-facing product, tool, or experience that required
+              balancing engineering with design and usability.
+            </p>
+            <p class="project-stack">Stack: Front end, state management, UI systems, iteration</p>
+            <p class="project-outcome">
+              Outcome: the core user win, delivery scope, or learning that made
+              the project worth featuring.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/nmarmi/" target="_blank" rel="noreferrer">Code</a>
+              <a href="#contact">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-index">04</p>
+            <h3>Quantitative Tool Placeholder</h3>
+            <p class="project-problem">
+              Problem: an investing, modeling, or decision-support workflow
+              where rigor mattered as much as implementation speed.
+            </p>
+            <p class="project-stack">Stack: Data pipelines, statistics, validation, reporting</p>
+            <p class="project-outcome">
+              Outcome: the signal, edge, or operational simplification the tool
+              created.
+            </p>
+            <div class="project-links">
+              <a href="assets/nicolo-marmi-resume.pdf" target="_blank" rel="noreferrer">Resume Context</a>
+              <a href="#contact">Discuss</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Technical Skills</p>
+          <h2>Grouped for scanning, not buried in paragraphs.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <p class="skill-heading">Languages</p>
+            <ul class="tag-list">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Java</li>
+              <li>C++</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <p class="skill-heading">Tools & Systems</p>
+            <ul class="tag-list">
+              <li>Git & GitHub</li>
+              <li>Node.js</li>
+              <li>REST APIs</li>
+              <li>Testing</li>
+              <li>Data Visualization</li>
+              <li>CLI Workflows</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <p class="skill-heading">Interests</p>
+            <ul class="tag-list">
+              <li>Distributed Systems</li>
+              <li>Developer Tools</li>
+              <li>Quant Research</li>
+              <li>Human-Centered UI</li>
+              <li>Performance</li>
+              <li>Technical Writing</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-i-work" id="how-i-work" data-active-mode="build">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">How I Work</p>
+          <h2>One interactive section with personality and signal.</h2>
+        </div>
+
+        <div class="workbench reveal">
+          <div class="workbench-intro">
+            <p>
+              Toggle between the modes that shape my best work. Each state can
+              later map to real projects, stories, or references.
+            </p>
+
+            <div class="mode-switch" role="tablist" aria-label="How I Work modes">
+              <button
+                class="mode-button is-active"
+                type="button"
+                data-mode="build"
+                role="tab"
+                aria-selected="true"
+              >
+                Build
+              </button>
+              <button
+                class="mode-button"
+                type="button"
+                data-mode="analyze"
+                role="tab"
+                aria-selected="false"
+              >
+                Analyze
+              </button>
+              <button
+                class="mode-button"
+                type="button"
+                data-mode="collaborate"
+                role="tab"
+                aria-selected="false"
+              >
+                Collaborate
+              </button>
+            </div>
+          </div>
+
+          <div class="mode-panel" aria-live="polite">
+            <p class="mode-label" id="mode-label">Current mode / Build</p>
+            <h3 id="mode-title">Shipping the core idea before polishing the edges.</h3>
+            <p id="mode-description">
+              Placeholder text for building mode. This space describes how I
+              scope, prototype, choose tradeoffs, and turn vague ideas into a
+              working version that others can react to.
+            </p>
+
+            <div class="mode-grid">
+              <div>
+                <p class="panel-heading">Strengths</p>
+                <ul class="signal-list" id="mode-strengths">
+                  <li>Rapid prototyping with a clear architecture in mind</li>
+                  <li>Translating ambiguity into a shippable first version</li>
+                  <li>Keeping UX and implementation constraints in the same frame</li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="panel-heading">Related signals</p>
+                <ul class="signal-list" id="mode-signals">
+                  <li>Front-end builds with deliberate interaction design</li>
+                  <li>Systems projects with clean internal interfaces</li>
+                  <li>Product-minded engineering decisions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Experience</p>
+          <h2>A short timeline that leaves room for stronger project detail.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <p class="timeline-year">Now</p>
+            <div>
+              <h3>Current focus placeholder</h3>
+              <p>
+                A concise line about the current role, degree, research thread,
+                or engineering focus.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <p class="timeline-year">Recent</p>
+            <div>
+              <h3>Professional milestone placeholder</h3>
+              <p>
+                Add one role card or milestone with the strongest evidence of
+                ownership, execution, or growth.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <p class="timeline-year">Earlier</p>
+            <div>
+              <h3>Academic milestone placeholder</h3>
+              <p>
+                Useful for degree programs, research groups, clubs, or technical
+                communities that shaped the portfolio narrative.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <p class="timeline-year">Next</p>
+            <div>
+              <h3>What I want to build toward</h3>
+              <p>
+                A forward-looking line about internships, full-time engineering
+                roles, research collaboration, or ambitious side projects.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <article class="recommendation-card reveal" aria-labelledby="recommendation-title">
+          <div class="recommendation-header">
+            <div>
+              <p class="section-kicker">Recommendation</p>
+              <h3 id="recommendation-title">Trusted with meaningful ownership early.</h3>
+            </div>
+            <a
+              class="recommendation-link"
+              href="https://www.linkedin.com/in/nicolo-marmi-92a891257/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on LinkedIn
+            </a>
+          </div>
+
+          <blockquote class="recommendation-quote">
+            "Within a few months we trusted him with a core internal initiative.
+            He quickly became a fully contributing member of our development team."
+          </blockquote>
+
+          <p class="recommendation-summary">
+            Stefano Gioffre, who managed Nicolo directly during his UniCredit
+            internship, highlighted strong problem-solving, fast learning, and
+            hands-on work across the full software development lifecycle.
+          </p>
+
+          <div class="recommendation-meta">
+            <p>Stefano Gioffre · Data Architect @ Gruppo Arcese</p>
+            <p>LinkedIn recommendation · August 31, 2025</p>
+          </div>
+
+          <ul class="tag-list recommendation-tags" aria-label="Skills mentioned in recommendation">
+            <li>Python</li>
+            <li>Git</li>
+            <li>DevOps</li>
+            <li>Data Science</li>
+            <li>Large Language Models</li>
+            <li>Agile</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Contact</p>
+          <h2>Open to engineering, research, and thoughtful collaboration.</h2>
+          <p class="contact-copy">
+            If you want to talk about internships, projects, or building
+            something interesting together, this is the best place to start.
+          </p>
+        </div>
+
+        <div class="contact-card reveal">
+          <a class="contact-link" href="mailto:nicolocmarmi@gmail.com">
+            nicolocmarmi@gmail.com
+          </a>
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/nicolo-marmi-92a891257/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="contact-link"
+            href="https://github.com/nmarmi/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            class="contact-link"
+            href="assets/nicolo-marmi-resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume PDF
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p> </p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
 </body>
 </html>

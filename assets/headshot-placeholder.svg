@@ -1,0 +1,14 @@
+<svg width="720" height="900" viewBox="0 0 720 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="900" rx="48" fill="#F5EEE4"/>
+  <rect x="34" y="34" width="652" height="832" rx="28" fill="#FFF9F1" stroke="#1A1715" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M98 120H622" stroke="#1A1715" stroke-opacity="0.2" stroke-width="2"/>
+  <path d="M98 778H622" stroke="#1A1715" stroke-opacity="0.2" stroke-width="2"/>
+  <circle cx="360" cy="332" r="128" fill="#E7D6C4"/>
+  <path d="M244 560C244 474.948 312.948 406 398 406H322C407.052 406 476 474.948 476 560V634H244V560Z" fill="#1A1715"/>
+  <circle cx="360" cy="322" r="92" fill="#1A1715"/>
+  <circle cx="360" cy="352" r="72" fill="#F5EEE4"/>
+  <rect x="176" y="694" width="368" height="78" rx="20" fill="#BF5A36"/>
+  <text x="204" y="742" fill="#FFF9F1" font-family="Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="6">HEADSHOT</text>
+  <text x="106" y="98" fill="#BF5A36" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">PORTRAIT PLACEHOLDER</text>
+  <text x="106" y="818" fill="#1A1715" fill-opacity="0.6" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">DROP IN A FINAL PHOTO LATER</text>
+</svg>
