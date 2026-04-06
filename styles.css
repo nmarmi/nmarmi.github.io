@@ -239,6 +239,13 @@ a {
   letter-spacing: 0.01em;
 }
 
+.project-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
 .section-heading h2,
 .mode-panel h3,
 .recommendation-header h3 {
@@ -466,6 +473,7 @@ a {
   padding: 1.6rem;
 }
 
+
 .project-card,
 .skill-group,
 .timeline-item,
@@ -505,20 +513,16 @@ a {
   font-weight: 600;
 }
 
-.project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  margin-top: 1.3rem;
-}
-
-.project-links a,
+.project-gh,
+s.project-links a,
 .site-footer a {
   color: var(--accent);
   font-weight: 600;
   text-decoration: none;
 }
 
+.project-gh:hover,
+.project-gh:focus-visible,
 .project-links a:hover,
 .project-links a:focus-visible,
 .site-footer a:hover,
