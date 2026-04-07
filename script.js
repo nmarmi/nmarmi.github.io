@@ -6,7 +6,6 @@ const navLinks = [...document.querySelectorAll(".site-nav a")];
 const sections = [...document.querySelectorAll("main section[id]")];
 const revealNodes = [...document.querySelectorAll(".reveal")];
 const modeButtons = [...document.querySelectorAll(".mode-button")];
-const howIWorkSection = document.querySelector(".how-i-work");
 const modePanel = document.querySelector(".mode-panel");
 
 const modeContent = {

@@ -240,10 +240,28 @@ a {
 }
 
 .project-index {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block !important;
+  text-align: left !important;
   margin-bottom: 0.4rem;
+}
+
+.project-number {
+  display: inline !important;
+}
+
+.project-links {
+  display: inline !important;
+}
+
+.project-separator {
+  display: inline !important;
+  color: var(--accent);
+}
+
+.project-index a {
+  display: inline !important;
+  float: none !important;
+  margin-left: 0 !important;
 }
 
 .section-heading h2,
@@ -514,7 +532,7 @@ a {
 }
 
 .project-gh,
-s.project-links a,
+.project-links a,
 .site-footer a {
   color: var(--accent);
   font-weight: 600;
@@ -553,14 +571,6 @@ s.project-links a,
   border-radius: 999px;
   color: var(--text);
   font-weight: 500;
-}
-
-.how-i-work {
-  position: relative;
-}
-
-.how-i-work::before {
-  content: none;
 }
 
 .workbench {
@@ -632,12 +642,6 @@ s.project-links a,
   border-top: 1px solid var(--line);
 }
 
-.how-i-work[data-active-mode="build"] .mode-panel,
-.how-i-work[data-active-mode="analyze"] .mode-panel,
-.how-i-work[data-active-mode="collaborate"] .mode-panel {
-  border-color: var(--line-strong);
-  background: var(--surface);
-}
 
 .timeline-item {
   display: grid;
