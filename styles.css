@@ -334,7 +334,7 @@ a {
 .recommendation-summary,
 .recommendation-meta,
 .visual-caption,
-.about-visual p {
+.about-visual p:not(.gallery-caption) {
   color: var(--muted);
 }
 
@@ -410,10 +410,110 @@ a {
   padding: 1rem;
 }
 
-.visual-frame img,
-.about-visual img {
+.visual-frame img {
   width: 100%;
   border-radius: calc(var(--radius-lg) - 0.4rem);
+}
+
+/* Gallery */
+.gallery {
+  position: relative;
+  border-radius: calc(var(--radius-lg) - 0.4rem);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: var(--surface-soft);
+}
+
+.gallery-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-slide.is-active {
+  opacity: 1;
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 1.2rem 1rem 0.8rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.72));
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 450;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.gallery:hover .gallery-caption {
+  opacity: 1;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--text);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.15s ease;
+  z-index: 2;
+}
+
+.gallery:hover .gallery-btn {
+  opacity: 1;
+}
+
+.gallery-btn:hover {
+  background: #fff;
+}
+
+.gallery-btn--prev { left: 0.65rem; }
+.gallery-btn--next { right: 0.65rem; }
+
+.gallery-dots {
+  position: absolute;
+  bottom: 0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.35rem;
+  z-index: 2;
+}
+
+.gallery-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.2s ease;
+}
+
+.gallery-dot.is-active {
+  background: #fff;
 }
 
 .visual-caption {

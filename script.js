@@ -176,3 +176,37 @@ modeButtons.forEach((button) => {
 });
 
 setMode("build");
+
+// Photo gallery
+(function () {
+  const gallery = document.getElementById("about-gallery");
+  if (!gallery) return;
+
+  const slides = [...gallery.querySelectorAll(".gallery-slide")];
+  const dotsContainer = gallery.querySelector(".gallery-dots");
+  const prevBtn = gallery.querySelector(".gallery-btn--prev");
+  const nextBtn = gallery.querySelector(".gallery-btn--next");
+  let current = 0;
+
+  // Build dots
+  slides.forEach(() => {
+    const dot = document.createElement("span");
+    dot.className = "gallery-dot";
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = [...dotsContainer.querySelectorAll(".gallery-dot")];
+
+  function goTo(index) {
+    slides[current].classList.remove("is-active");
+    dots[current].classList.remove("is-active");
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add("is-active");
+    dots[current].classList.add("is-active");
+  }
+
+  goTo(0);
+
+  prevBtn.addEventListener("click", () => goTo(current - 1));
+  nextBtn.addEventListener("click", () => goTo(current + 1));
+})();
