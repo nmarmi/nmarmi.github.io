@@ -227,7 +227,6 @@ a {
 .eyebrow,
 .section-kicker,
 .mode-label,
-.value-label,
 .project-index,
 .timeline-year,
 .skill-heading,
@@ -453,13 +452,7 @@ a {
   padding: 0;
 }
 
-.value-grid {
-  display: grid;
-  gap: 1rem;
-  margin-top: var(--space-5);
-}
 
-.value-card,
 .timeline-item {
   padding: 1.25rem 1.3rem;
   background: rgba(255, 255, 255, 0.5);
@@ -467,10 +460,6 @@ a {
   border-radius: var(--radius-md);
 }
 
-.value-label {
-  margin-bottom: 0.4rem;
-  color: var(--text);
-}
 
 .about-visual {
   padding: 1rem;
@@ -650,6 +639,12 @@ a {
 
 .timeline-year {
   color: var(--accent);
+}
+
+.timeline-meta {
+  margin: 0.1rem 0 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .timeline-item p:last-child,
