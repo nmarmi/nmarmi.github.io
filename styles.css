@@ -299,7 +299,7 @@ a {
   display: grid;
   align-content: start;
   min-height: 0;
-  padding: 1rem 1.05rem;
+  padding: 1.5rem 1.4rem;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
@@ -346,10 +346,14 @@ a {
 }
 
 .cta-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.9rem;
   margin: 1.5rem 0 0;
+}
+
+.cta-row .button-ghost {
+  grid-column: 1 / -1;
 }
 
 .button {
