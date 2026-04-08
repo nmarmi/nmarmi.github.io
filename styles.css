@@ -86,7 +86,7 @@ a {
 }
 
 .site-header {
-  padding: 0 0 var(--space-7);
+  padding: 0 0 var(--space-5);
 }
 
 .nav-shell {
@@ -220,7 +220,7 @@ a {
 .hero-grid {
   display: grid;
   gap: var(--space-5);
-  align-items: start;
+  align-items: stretch;
   padding-top: 3.5rem;
 }
 
@@ -292,7 +292,8 @@ a {
   display: grid;
   gap: 0.85rem;
   width: 100%;
-  align-self: start;
+  align-self: stretch;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .hero-signal-card {
@@ -305,6 +306,7 @@ a {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow);
   text-align: left;
+  height: 100%;
 }
 
 .hero-signal-title {
